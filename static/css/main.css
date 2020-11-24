@@ -1,0 +1,27 @@
+main{
+  padding-top: 50px;
+}
+
+.card{
+  margin-bottom: 15px;
+}
+
+.sort-block .btn-primary{
+  display: flex;
+  align-items: center;
+}
+
+.sort-block .btn-primary::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url(../img/sort.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 5px;
+}
+
+.sort-block .btn-primary.up::after{
+  transform: rotate(180deg);
+}
