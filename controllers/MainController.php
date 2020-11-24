@@ -59,7 +59,7 @@ class MainController
       if ($sort['url']) {
         $sorts[$keySort]['url'] = "/?sort=".$sort['url'].($currentPage > 1?("&page=".$currentPage):"");
       }
-      elseif($currentPage > 2){
+      elseif($currentPage > 1){
         $sorts[$keySort]['url'] = "/?page=".$currentPage;
       }
       else{
